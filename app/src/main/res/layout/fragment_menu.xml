@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:context=".menu"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:background="#455667">
+
+        <Button
+            android:id="@+id/mbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:onClick="menu_click"
+            android:text="个人基础信息"
+            app:layout_constraintBottom_toTopOf="@+id/body_detail_btn"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/body_detail_btn"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="身体详细信息"
+            android:onClick="menu_click"
+            app:layout_constraintBottom_toTopOf="@+id/log_btn"
+            app:layout_constraintEnd_toEndOf="@id/mbtn1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/mbtn1" />
+
+        <Button
+            android:id="@+id/log_btn"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginBottom="340dp"
+            android:onClick="menu_click"
+            android:text="行车日志"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/body_detail_btn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/body_detail_btn" />
+
+        <TextView
+            android:id="@+id/showed_name"
+            android:layout_width="157dp"
+            android:layout_height="57dp"
+            android:text="@string/showed_name"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/mbtn1"
+            app:layout_constraintEnd_toEndOf="@+id/mbtn1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/mbtn1" />
+
+        <ImageView
+            android:id="@+id/head_btn"
+            android:layout_width="99dp"
+            android:layout_height="122dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="menu_click"
+            android:src="@drawable/head"
+            app:layout_constraintEnd_toEndOf="@+id/showed_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/showed_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="170dp"
+            android:layout_height="182dp"
+            android:src="@drawable/driver_pic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#90575a5d"
+            android:onClick="back_click"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#00b483"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:title="@string/app_name"
+        app:navigationIcon="@drawable/menu_min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.example.safe_tool.reference.DashboardView
+        android:id="@+id/ds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:bigSliceCount="9"
+        app:headerRadius="50dp"
+        app:headerTitle="姿势"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:maxValue="450"
+        app:measureTextSize="10sp"
+        app:radius="110dp"
+        app:realTimeValue="325"
+        app:startAngle="210"
+        app:stripeWidth="30dp"
+        app:sweepAngle="120"
+        app:textColor="#363532" />
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="@string/start"
+        android:stateListAnimator="@null"
+        android:onClick="start_onclick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/alcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/alcohol"
+        app:layout_constraintBottom_toTopOf="@+id/temperature"
+        app:layout_constraintEnd_toEndOf="@+id/temperature"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="@+id/temperature" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/temperature"
+        app:layout_constraintBottom_toTopOf="@+id/heart_beat"
+        app:layout_constraintEnd_toEndOf="@+id/heart_beat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/heart_beat" />
+
+    <TextView
+        android:id="@+id/heart_beat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/heart_beat"
+        app:layout_constraintBottom_toTopOf="@+id/blood_prs"
+        app:layout_constraintEnd_toEndOf="@+id/blood_prs"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/blood_prs" />
+
+    <TextView
+        android:id="@+id/blood_prs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="248dp"
+        android:text="@string/blood_prs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/alcohol_data"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="@string/alcohol_data"
+        android:textColor="#00ff00"
+        app:layout_constraintBottom_toBottomOf="@+id/alcohol"
+        app:layout_constraintEnd_toEndOf="@+id/temperature_data"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@+id/temperature_data"
+        app:layout_constraintTop_toTopOf="@+id/alcohol"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/temperature_data"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature_data"
+        android:textColor="#00ff00"
+        app:layout_constraintBottom_toBottomOf="@+id/temperature"
+        app:layout_constraintEnd_toEndOf="@+id/heart_data"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/heart_data"
+        app:layout_constraintTop_toTopOf="@+id/temperature" />
+
+    <TextView
+        android:id="@+id/heart_data"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="@string/heart_data"
+        android:textColor="#00ff00"
+        app:layout_constraintBottom_toBottomOf="@+id/heart_beat"
+        app:layout_constraintEnd_toEndOf="@+id/blood_data"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/blood_data"
+        app:layout_constraintTop_toTopOf="@+id/heart_beat"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/blood_data"
+        android:layout_width="175dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:text="@string/blood_data"
+        android:textColor="#00ff00"
+        app:layout_constraintBottom_toBottomOf="@+id/blood_prs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toEndOf="@+id/blood_prs"
+        app:layout_constraintTop_toTopOf="@+id/blood_prs"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

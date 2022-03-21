@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#919481"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MenuItems.BodyDetailFragment">
+
+    <Spinner
+        android:id="@+id/heigh_blood_selecter2"
+        android:layout_width="65dp"
+        android:layout_height="19dp"
+        android:entries="@array/heigh_blood_select"
+        app:layout_constraintBottom_toBottomOf="@+id/wave_line2"
+        app:layout_constraintEnd_toEndOf="@+id/low_blood_selecter2"
+        app:layout_constraintStart_toStartOf="@+id/low_blood_selecter2"
+        app:layout_constraintTop_toTopOf="@+id/wave_line2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="back_click"
+        android:background="@drawable/edge_shap"
+        android:src="@drawable/back_min"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/heart_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:text="心率"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="舒张压"
+        app:layout_constraintEnd_toEndOf="@+id/lowblood_tag"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/lowblood_tag"
+        app:layout_constraintTop_toBottomOf="@+id/lowblood_tag" />
+
+    <TextView
+        android:id="@+id/heighblood_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="mmHg"
+        app:layout_constraintBottom_toBottomOf="@+id/low_blood_selecter2"
+        app:layout_constraintStart_toEndOf="@+id/low_blood_selecter2"
+        app:layout_constraintTop_toTopOf="@+id/low_blood_selecter2"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/lowblood_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="舒张压"
+        app:layout_constraintBottom_toBottomOf="@+id/blood_tag"
+        app:layout_constraintStart_toEndOf="@+id/blood_tag"
+        app:layout_constraintTop_toTopOf="@+id/blood_tag"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/low_tem_selecter"
+        android:layout_width="93dp"
+        android:layout_height="30dp"
+        android:entries="@array/temperature_select"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="@+id/heigh_heart_selecter"
+        app:layout_constraintStart_toStartOf="@+id/heigh_heart_selecter"
+        app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+    <Spinner
+        android:id="@+id/heigh_tem_selecter"
+        android:layout_width="91dp"
+        android:layout_height="25dp"
+        android:entries="@array/temperature_select"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="@+id/low_tem_selecter"
+        app:layout_constraintStart_toStartOf="@+id/low_tem_selecter"
+        app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/degree2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="℃"
+        app:layout_constraintBottom_toBottomOf="@+id/heigh_tem_selecter"
+        app:layout_constraintEnd_toEndOf="@+id/degree1"
+        app:layout_constraintStart_toStartOf="@+id/degree1"
+        app:layout_constraintTop_toTopOf="@+id/heigh_tem_selecter" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="最高"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/degree1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="℃"
+        app:layout_constraintBottom_toBottomOf="@+id/low_tem_selecter"
+        app:layout_constraintEnd_toEndOf="@+id/b_s2"
+        app:layout_constraintStart_toStartOf="@+id/b_s2"
+        app:layout_constraintTop_toTopOf="@+id/low_tem_selecter" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最低"
+        app:layout_constraintBottom_toBottomOf="@+id/tem_tag"
+        app:layout_constraintEnd_toEndOf="@+id/heigh_text1"
+        app:layout_constraintStart_toStartOf="@+id/heigh_text1"
+        app:layout_constraintTop_toTopOf="@+id/tem_tag" />
+
+    <TextView
+        android:id="@+id/tem_tag"
+        android:layout_width="41dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="176dp"
+        android:text="体温"
+        app:layout_constraintEnd_toEndOf="@+id/blood_tag"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="@+id/blood_tag"
+        app:layout_constraintTop_toBottomOf="@+id/blood_tag" />
+
+    <Spinner
+        android:id="@+id/low_blood_selecter2"
+        android:layout_width="65dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="12dp"
+        android:entries="@array/low_blood_select"
+        app:layout_constraintBottom_toBottomOf="@+id/wave_line1"
+        app:layout_constraintStart_toEndOf="@+id/wave_line1"
+        app:layout_constraintTop_toTopOf="@+id/wave_line1"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Spinner
+        android:id="@+id/low_blood_selecter1"
+        android:layout_width="62dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="24dp"
+        android:entries="@array/low_blood_select"
+        app:layout_constraintBottom_toBottomOf="@+id/lowblood_tag"
+        app:layout_constraintStart_toEndOf="@+id/lowblood_tag"
+        app:layout_constraintTop_toTopOf="@+id/lowblood_tag"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/blood_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="血压"
+        app:layout_constraintEnd_toEndOf="@+id/heart_tag"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/heart_tag"
+        app:layout_constraintTop_toBottomOf="@+id/heart_tag" />
+
+    <TextView
+        android:id="@+id/mmHg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="mmHg"
+        app:layout_constraintBottom_toBottomOf="@+id/low_blood_selecter1"
+        app:layout_constraintStart_toEndOf="@+id/low_blood_selecter1"
+        app:layout_constraintTop_toTopOf="@+id/low_blood_selecter1" />
+
+    <TextView
+        android:id="@+id/b_s1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="次/秒"
+        app:layout_constraintBottom_toBottomOf="@+id/low_heart_selecter"
+        app:layout_constraintStart_toEndOf="@+id/low_heart_selecter"
+        app:layout_constraintTop_toTopOf="@+id/low_heart_selecter"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/b_s2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="次/秒"
+        app:layout_constraintBottom_toBottomOf="@+id/heigh_heart_selecter"
+        app:layout_constraintEnd_toEndOf="@+id/b_s1"
+        app:layout_constraintStart_toStartOf="@+id/b_s1"
+        app:layout_constraintTop_toTopOf="@+id/heigh_heart_selecter"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <Spinner
+        android:id="@+id/low_heart_selecter"
+        android:layout_width="89dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="48dp"
+        android:prompt="@string/heart_prompt"
+        android:entries="@array/heart_select"
+        app:layout_constraintBottom_toBottomOf="@+id/low_text1"
+        app:layout_constraintStart_toEndOf="@+id/low_text1"
+        app:layout_constraintTop_toTopOf="@+id/low_text1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/heigh_heart_selecter"
+        android:layout_width="91dp"
+        android:layout_height="30dp"
+        android:entries="@array/heart_select"
+        app:layout_constraintBottom_toBottomOf="@+id/heigh_text1"
+        app:layout_constraintEnd_toEndOf="@+id/low_heart_selecter"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/low_heart_selecter"
+        app:layout_constraintTop_toTopOf="@+id/heigh_text1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/low_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="最低"
+        app:layout_constraintBottom_toBottomOf="@+id/heart_tag"
+        app:layout_constraintStart_toEndOf="@+id/heart_tag"
+        app:layout_constraintTop_toTopOf="@+id/heart_tag"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/heigh_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="最高"
+        app:layout_constraintEnd_toEndOf="@+id/low_text1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/low_text1"
+        app:layout_constraintTop_toBottomOf="@+id/low_text1" />
+
+    <TextView
+        android:id="@+id/wave_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="~"
+        app:layout_constraintBottom_toBottomOf="@+id/mmHg1"
+        app:layout_constraintStart_toEndOf="@+id/mmHg1"
+        app:layout_constraintTop_toTopOf="@+id/mmHg1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/body_detail_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#5a715f"
+        android:text="submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mmHg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mmHg"
+        app:layout_constraintBottom_toBottomOf="@+id/heigh_blood_selecter1"
+        app:layout_constraintEnd_toEndOf="@+id/mmHg1"
+        app:layout_constraintStart_toStartOf="@+id/mmHg1"
+        app:layout_constraintTop_toTopOf="@+id/heigh_blood_selecter1" />
+
+    <TextView
+        android:id="@+id/wave_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="~"
+        app:layout_constraintBottom_toBottomOf="@+id/mmHg3"
+        app:layout_constraintEnd_toEndOf="@+id/wave_line1"
+        app:layout_constraintStart_toStartOf="@+id/wave_line1"
+        app:layout_constraintTop_toTopOf="@+id/mmHg3" />
+
+    <TextView
+        android:id="@+id/mmHg4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mmHg"
+        app:layout_constraintBottom_toBottomOf="@+id/heigh_blood_selecter2"
+        app:layout_constraintEnd_toEndOf="@+id/heighblood_tag"
+        app:layout_constraintStart_toStartOf="@+id/heighblood_tag"
+        app:layout_constraintTop_toTopOf="@+id/heigh_blood_selecter2" />
+
+    <Spinner
+        android:id="@+id/heigh_blood_selecter1"
+        android:layout_width="67dp"
+        android:layout_height="20dp"
+        android:entries="@array/heigh_blood_select"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/low_blood_selecter1"
+        app:layout_constraintStart_toStartOf="@+id/low_blood_selecter1"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="重置"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toEndOf="@+id/body_detail_submit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

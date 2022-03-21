@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">safe-tool</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="heart_beat">心率</string>
+    <string name="blood_prs">血压</string>
+    <string name="temperature">体温</string>
+    <string name="alcohol">酒精浓度</string>
+    <string name="alcohol_data">0mg/L</string>
+    <string name="heart_data">0/min</string>
+    <string name="blood_data">0mmHg/0mmHg</string>
+    <string name="temperature_data">0℃</string>
+    <string name="showed_name">李狗蛋</string>
+    <string name="link_man_text">联系人姓名：</string>
+    <string name="telephone_no">联系人电话:</string>
+    <string name="driver_name_text">本人姓名：</string>
+    <string name="submit">submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="heart_prompt">100</string>
+</resources>
